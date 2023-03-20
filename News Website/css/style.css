@@ -1,0 +1,380 @@
+
+
+html { font-size: 10px; }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.container{
+    background-color: aqua;
+    margin: auto;
+    
+}
+
+.website{
+    box-sizing:content-box;
+    align-content: center;
+    margin: auto;
+    padding: auto;
+    background-color: blueviolet;
+}
+
+span{
+    color: red;
+}
+.header{
+    box-sizing: content-box;
+    width: 100%;
+    height: 35px;
+    background-color: yellow;
+}
+
+.header p{
+    font-size: 2.3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.logo{
+
+    box-sizing: content-box;
+    width: 100%;
+    height: 100px;
+    
+    
+    padding: 0px auto;
+    background-color: rgb(81, 46, 46);
+    
+}
+.logo img{
+    width: 350px;
+    height: auto;
+    margin: auto;
+    
+}
+
+.navbar{
+    box-sizing: content-box;
+    width: 100%;
+    height: 54px;
+    background-color: rgb(207, 28, 73);
+    
+}
+
+.Hamburger{
+    display: none;
+}
+
+/* .ham{
+    display: none;
+}
+
+.cross{
+    display: none;
+} */
+/* .navbarGo{ */
+    
+    
+
+
+.navbar ul{
+    z-index: 5;
+    display: flex;
+ 
+    padding: auto;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 12px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul li a:hover  { 
+    cursor: pointer;
+    color: black;
+    
+    background-color: aliceblue;
+}
+
+.navbar ul li a{
+    box-sizing: border-box;
+    font-size:  2.2rem;
+    color: aliceblue;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+
+.web-containt{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /*background-color: rgb(46, 207, 28);*/
+}
+
+.post{
+    width: 80%;
+    height: auto;
+    align-self: center;
+   /* background-color: tomato;*/
+
+}
+
+.post h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+
+.main-post1{
+    box-sizing: content-box;
+    width: auto;
+    height: 200px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: sienna;
+}
+
+.main-post1 img{
+    width: 20vw;
+    height: 30vh;
+    margin: 8px;
+}
+
+/*.main-post1 h1{
+    font-size: 2vw;
+    font-weight: bold;
+    margin: 20px 20px;
+}*/
+.sidepost{
+    width: 28vw;
+    height: auto;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: tomato;
+}
+
+.sidepost h1{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 10px 10px;
+}
+
+.post1{
+    width: 26vw;
+    margin: 5px auto ;
+    height: auto;
+    background-color: thistle;
+}
+
+.footer{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* background-color: rgb(31, 28, 207); */
+}
+
+.footercolumn{
+    box-sizing: content-box;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    /* background-color: rgb(136, 135, 191); */
+}
+.col1{
+    width: 400px;
+    height: 200px;
+    margin: 5px;
+    /* background-color: peru; */
+}
+
+.sociallink{
+    box-sizing: border-box;
+    width: auto;
+    height: 200px;
+    margin: 0px 0px;
+    /* background-color: rgb(57, 46, 35); */
+}
+
+#scroll-container {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  #scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 15s linear infinite;
+    -webkit-animation: my-animation 15s linear infinite;
+    animation: my-animation 15s linear infinite;
+  }
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+.footer-credit{
+    box-sizing: content-box;
+    width: auto;
+  
+    height: 40px;
+    background-color: rgb(112, 90, 117);
+}
+
+.footer-credit a{
+    place-content: center;
+    margin: auto;
+}
+
+.footer-credit a:hover{
+    color: rgb(30, 201, 228);
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: auto;
+        margin: 0px;
+    }
+    .website {
+        width: auto;
+        
+    }
+    .web-containt{
+        flex-direction: column;
+
+    }
+    .header{
+        width: auto;
+    }
+    .logo{
+        width: auto;
+    }
+    .navbar{
+        width: auto;
+    }
+    .Hamburger{
+        display: contents;
+        z-index: 9;
+        position: absolute;
+    }
+
+    .hum{
+        z-index: 9;
+        position: absolute;
+        display: contents;
+    }
+
+    .cross{
+        z-index: 9;
+        position: absolute;
+        display: contents;
+    }
+    .web-containt{
+        width: 90%;
+        margin: auto;
+    }
+
+    .post{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+    .sidepost{
+        display: contents;
+        padding: auto;
+        
+    }
+    .post1{
+        width: 100%;
+    }
+
+    .main-post1{
+        display: flex;
+        width: 90%;
+    }
+    .footer{
+        width: auto;
+    }
+
+    .footercolumn{
+      display: grid;
+      grid-template-columns: auto;
+      box-sizing: content-box;
+      width: 100%;
+      margin: auto;
+    }
+    .col1{
+        width: 340px;
+    }
+
+    .navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navbar li a{
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar{
+       display: flexbox;
+       width: 100%;
+       
+       position: relative;
+      /* background-color: rgb(255, 217, 211); */
+       padding-top: 3rem;
+       height: 100%;
+       transition: transform 0.1s ease-in; /* for transition*/
+    }
+
+    .navbarGo{
+        box-sizing: content-box;
+        transform: translate(-100%, 0); /* for hide item*/
+        position: absolute /* for over contain*/
+    }
+}
